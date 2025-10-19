@@ -61,8 +61,8 @@ function formatarMensagem({ years, months, days }, start, end) {
   if (days === 0 && (years > 0 || months > 0) && end.getDate() === start.getDate()) {
     const partes = [];
     if (years) partes.push(`${years} ano${years > 1 ? "s" : ""}`);
-    if (months) partes.push(`${months} mês${months > 1 ? "es" : ""}`);
-    return `Hoje completamos ${partes.join(" e ")} 💖`;
+    if (months) partes.push(`${months} mês(${months > 1 ? "es" : ""})`);
+    return `Hoje completamos ${partes.join(" e ")} minha branca💖 `;
   }
 
   const partes = [];
